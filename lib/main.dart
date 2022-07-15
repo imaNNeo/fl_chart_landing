@@ -1,4 +1,5 @@
 import 'package:fl_chart_website/home_page.dart';
+import 'package:fl_chart_website/consts.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'FL Chart',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: AppColors.primary,
+        backgroundColor: AppColors.primary,
       ),
       home: const HomePage(),
     );

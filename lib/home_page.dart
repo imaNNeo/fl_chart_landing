@@ -43,7 +43,6 @@ class HomePage extends StatelessWidget {
       backgroundColor: AppColors.primary,
       body: LayoutBuilder(builder: (context, constraints) {
         final width = constraints.maxWidth;
-        final height = constraints.maxHeight;
         final chartItemsMargin = width * 0.01;
         final topSpace = width * 0.04;
         return Column(
@@ -85,10 +84,10 @@ class HomePage extends StatelessWidget {
             SizedBox(height: min(topSpace * 1.8, 80)),
             TextButton(
               onPressed: () {
-                launchUrl(Uri.parse(AppData.flChartPubInstall));
+                launchUrl(Uri.parse(AppData.flChartApp));
               },
               child: const Text(
-                "Install it Now!",
+                "Try it now!",
                 style: TextStyle(
                   color: AppColors.secondary,
                   fontSize: 48,

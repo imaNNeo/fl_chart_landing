@@ -1,4 +1,3 @@
-import 'package:fl_chart_website/home_page.dart';
 import 'package:flutter/material.dart';
 
 class AppColors {
@@ -11,7 +10,7 @@ class AppColors {
 class AppData {
   static const flutterWebsite = 'https://flutter.dev/';
   static const flChartPub = 'https://pub.dev/packages/fl_chart';
-  static const flChartPubInstall = '$flChartPub/install';
+  static const flChartApp = 'https://app.flchart.dev';
   static const flChartGithub = 'https://github.com/imaNNeoFighT/fl_chart';
   static const flChartWebsiteGithub = 'https://github.com/imaNNeoFighT/fl_chart_website';
   static const flutter4funBlog = 'https://flutter4fun.com/category/fl-chart/';

@@ -23,6 +23,22 @@
   --ifm-font-family-base: 'Assistant', sans-serif;
 }
 
+html[data-theme='dark'] {
+  --ifm-color-primary: #50e4ff;
+  --ifm-color-primary-dark: #2fdfff;
+  --ifm-color-primary-darker: #1edcff;
+  --ifm-color-primary-darkest: #00c6eb;
+  --ifm-color-primary-light: #72e9ff;
+  --ifm-color-primary-lighter: #82ecff;
+  --ifm-color-primary-lightest: #b4f4ff;
+  --ifm-background-color: #1b2339;
+  --ifm-font-color-base: #ffffff;
+  --ifm-footer-background-color: #282E45;
+  --ifm-footer-color: #FFFFFF;
+  --ifm-footer-link-color: #CCCCCC;
+  --ifm-font-family-base: 'Assistant', sans-serif;
+}
+
 .navbar {
   background-color: transparent;
 }

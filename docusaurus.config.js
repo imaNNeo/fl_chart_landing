@@ -40,6 +40,11 @@ const config = {
 
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
     navbar: {
       title: 'FL Chart',
       logo: {
@@ -48,8 +53,13 @@ const config = {
       },
       items: [
         {
-          to: '/about', // Ensure you have an 'about' page
-          label: 'About',
+          to: 'https://docs.flchart.dev/',
+          label: 'Docs',
+          position: 'right',
+        },
+        {
+          href: 'https://app.flchart.dev/',
+          label: 'Examples App',
           position: 'right',
         },
         {
@@ -57,30 +67,17 @@ const config = {
           label: 'GitHub',
           position: 'right',
         },
-        {
-          href: 'https://app.flchart.dev/', // Replace with your actual sample app URL
-          label: 'FL Chart App',
-          position: 'right',
-        },
-        {
-          href: 'https://github.com/imaNNeo/fl_chart',
-          position: 'right',
-          className: 'header-github-link',
-          'aria-label': 'GitHub repository',
-        },
       ],
     },
-//    footer: {
-//      style: 'dark',
-//      links: [
-//        // Footer links can be adjusted as needed
-//      ],
-//      copyright: `Copyright © ${new Date().getFullYear()} FL Chart. Built with Docusaurus.`,
-//    },
-    prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
-      defaultLanguage: 'dart',
+    footer: {
+      links: [
+        {
+          to: '/about', // Ensure you have an 'about' page
+          label: 'About',
+          position: 'right',
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} FL Chart. Built with Docusaurus.`,
     },
   },
 };

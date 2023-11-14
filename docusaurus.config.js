@@ -67,6 +67,11 @@ const config = {
           label: 'GitHub',
           position: 'right',
         },
+        {
+          href: '/about',
+          label: 'About',
+          position: 'right',
+        },
       ],
     },
     footer: {
@@ -74,7 +79,30 @@ const config = {
         {
           to: '/about', // Ensure you have an 'about' page
           label: 'About',
-          position: 'right',
+        },
+        {
+          to: 'https://docs.flchart.dev', // Ensure you have an 'about' page
+          label: 'Docs',
+        },
+        {
+          to: 'https://github.com/imaNNeo/fl_chart', // Ensure you have an 'about' page
+          label: 'Source code',
+        },
+        {
+          to: 'https://github.com/imaNNeo/fl_chart_landing', // Ensure you have an 'about' page
+          label: 'Landing page source code',
+        },
+        {
+          to: 'https://flutter4fun.com/', // Ensure you have an 'about' page
+          label: 'Flutter 4 Fun',
+        },
+        {
+          to: 'https://github.com/imaNNeo/fl_chart/issues/new/choose', // Ensure you have an 'about' page
+          label: 'Report and issue',
+        },
+        {
+          to: 'https://github.com/imaNNeo/fl_chart/blob/master/CONTRIBUTING.md', // Ensure you have an 'about' page
+          label: 'Contribute',
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} FL Chart. Built with Docusaurus.`,

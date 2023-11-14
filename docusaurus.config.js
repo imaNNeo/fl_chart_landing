@@ -39,7 +39,7 @@ const config = {
   ],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/social_preview.jpg',
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: true,

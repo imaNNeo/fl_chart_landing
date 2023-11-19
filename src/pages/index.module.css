@@ -3,19 +3,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: calc(100vh - 124px);
 }
 
 .mainContent {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  position: absolute;
+}
+
+.chartsImage {
+  width: 70%;
+  margin-left: 45%;
+  z-index: -1;
+  overflow: hidden;
+  position: relative;
 }
 
 .mainColumn {
   display: flex;
   flex-direction: column;
   align-items: start;
+  position: absolute;
+  overflow:visible;
+  left: 0%;
+  margin-left: 2rem;
 }
 
 .sloganNormal {
@@ -26,6 +39,20 @@
   font-weight: 300;
   line-height: 50px;
   margin-bottom: 0px;
+  text-align: start;
+}
+@media (max-width: 768px) {
+  .sloganNormal {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sloganNormal {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 .sloganBold {
@@ -45,8 +72,32 @@
   margin-right: 0.4rem;
 }
 
+@media (max-width: 768px) {
+  .flutterLogoInText {
+    width: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .flutterLogoInText {
+    width: 0.8rem;
+  }
+}
+
 .afterFlutterLogoText {
   font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .afterFlutterLogoText {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .afterFlutterLogoText {
+    font-size: 0.8rem;
+  }
 }
 
 .buttonsRow {
@@ -104,7 +155,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  
+
   font-size: 14px;
   font-style: normal;
   font-weight: 800;
@@ -122,3 +173,4 @@
   display: inline-block;
   /* Ensures proper alignment */
 }
+

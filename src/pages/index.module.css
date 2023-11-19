@@ -36,13 +36,89 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
+  margin-left: 0.3rem;
 }
 
 .flutterLogoInText {
   width: 1rem;
   margin-right: 0.4rem;
 }
+
 .afterFlutterLogoText {
   font-size: 1.2rem;
+}
+
+.buttonsRow {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.outlineButton {
+  background-color: transparent;
+  color: #50E4FF;
+  border: 2px solid #50E4FF;
+  border-radius: 4px;
+  height: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 0.88rem;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%;
+}
+
+.outlineButton:hover {
+  background-color: #50E4FF22;
+}
+
+.outlineButton .buttonIcon {
+  margin-left: 0.2rem;
+  /* Spacing between text and icon */
+  display: inline-block;
+  /* Ensures proper alignment */
+}
+
+.solidButton {
+  background-color: #50E4FF;
+  color: black;
+  border: 2px solid #50E4FF;
+  border-radius: 4px;
+  height: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 0.88rem;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%;
+}
+
+.solidButton:hover {
+  background-color: #3db5ca;
+}
+
+.solidButton .buttonIcon {
+  height: 1rem;
+  margin-right: 0.2rem;
+  /* Spacing between text and icon */
+  display: inline-block;
+  /* Ensures proper alignment */
 }

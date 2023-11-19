@@ -18,7 +18,16 @@ export default function Home() {
           <p className={styles.sloganNormal}>
             Forever <span className={styles.sloganBold}>Free</span>
           </p>
-
+          <div className={styles.buttonsRow}>
+            <button className={styles.outlineButton}>
+              Give it a try
+              <img src="/img/play_arrow.svg" className={styles.buttonIcon} />
+            </button>
+            <button className={styles.solidButton}>
+              <img src="/img/github.svg" className={styles.buttonIcon} />
+              Get started
+            </button>
+          </div>
         </div>
       </main>
     </div>

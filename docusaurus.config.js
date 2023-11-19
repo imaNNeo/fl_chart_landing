@@ -52,7 +52,7 @@ const config = {
       },
       items: [
         {
-          to: 'https://docs.flchart.dev/',
+          to: 'https://github.com/imaNNeo/fl_chart/blob/master/repo_files/documentations/index.md',
           label: 'Docs',
           position: 'right',
         },
@@ -76,31 +76,31 @@ const config = {
     footer: {
       links: [
         {
-          to: '/about', // Ensure you have an 'about' page
+          to: '/about',
           label: 'About',
         },
         {
-          to: 'https://docs.flchart.dev', // Ensure you have an 'about' page
+          to: 'https://github.com/imaNNeo/fl_chart/blob/master/repo_files/documentations/index.md',
           label: 'Docs',
         },
         {
-          to: 'https://github.com/imaNNeo/fl_chart', // Ensure you have an 'about' page
+          to: 'https://github.com/imaNNeo/fl_chart', 
           label: 'Source code',
         },
         {
-          to: 'https://github.com/imaNNeo/fl_chart_landing', // Ensure you have an 'about' page
+          to: 'https://github.com/imaNNeo/fl_chart_landing', 
           label: 'Landing page source code',
         },
         {
-          to: 'https://flutter4fun.com/', // Ensure you have an 'about' page
+          to: 'https://flutter4fun.com/ui-challenge-7/',
           label: 'Flutter 4 Fun',
         },
         {
-          to: 'https://github.com/imaNNeo/fl_chart/issues/new/choose', // Ensure you have an 'about' page
+          to: 'https://github.com/imaNNeo/fl_chart/issues/new/choose',
           label: 'Report and issue',
         },
         {
-          to: 'https://github.com/imaNNeo/fl_chart/blob/master/CONTRIBUTING.md', // Ensure you have an 'about' page
+          to: 'https://github.com/imaNNeo/fl_chart/blob/master/CONTRIBUTING.md',
           label: 'Contribute',
         },
       ],

@@ -40,5 +40,11 @@ html[data-theme='dark'] {
 }
 
 .navbar {
-  background-color: transparent;
+  background-color: #1D2337;
+  border-bottom: 0px;
+}
+
+.custom-navbar-logo-class{
+  height: 80px;
+  background-color: #0f0f0f;
 }

@@ -46,10 +46,9 @@ const config = {
       respectPrefersColorScheme: false,
     },
     navbar: {
-      title: 'FL Chart',
       logo: {
         alt: 'FL Chart Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo_with_text.svg',
       },
       items: [
         {

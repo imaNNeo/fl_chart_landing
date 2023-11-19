@@ -12,21 +12,37 @@
   align-items: center;
 }
 
-.logo {
-  max-width: 700px; /* Adjust size as needed */
-  margin-right: 20px;
+.mainColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
-.textBlock {
-  text-align: left;
+.sloganNormal {
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Inter;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 50px;
+  margin-bottom: 0px;
 }
 
-.title {
-  font-size: 5rem;
-  margin-bottom: -0.5rem;
+.sloganBold {
+  font-weight: 700;
 }
 
-.subtitle {
-  font-size: 1.3rem;
-  margin-left: 0.25rem;
+.flutterChartLibrary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.flutterLogoInText {
+  width: 1rem;
+  margin-right: 0.4rem;
+}
+.afterFlutterLogoText {
+  font-size: 1.2rem;
 }

@@ -5,10 +5,20 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <main className={styles.mainContent}>
-        <img src="/img/logo.svg" alt="FL Chart Logo" className={styles.logo} />
-        <div className={styles.textBlock}>
-          <h1 className={styles.title}>FL Chart</h1>
-          <p className={styles.subtitle}>Highly customizable flutter chart library</p>
+        <div className={styles.mainColumn}>
+
+          <div className={styles.flutterChartLibrary}>
+            <img src="/img/flutter.svg" alt="Flutter logo with text" className={styles.flutterLogoInText} />
+            <span className={styles.afterFlutterLogoText}>Flutter chart library</span>
+          </div>
+
+          <p className={styles.sloganNormal}>
+            Endless <span className={styles.sloganBold}>Customizability</span>
+          </p>
+          <p className={styles.sloganNormal}>
+            Forever <span className={styles.sloganBold}>Free</span>
+          </p>
+
         </div>
       </main>
     </div>

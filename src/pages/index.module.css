@@ -31,6 +31,15 @@
   margin-left: 2rem;
 }
 
+.chartIcons {
+  width: 10vw;
+  min-width: 2vw;
+  max-width: 2vw;
+  left: 5vw;
+  bottom: -5vw;
+  position: absolute;
+}
+
 .sloganNormal {
   font-feature-settings: 'clig' off, 'liga' off;
   font-family: Inter;

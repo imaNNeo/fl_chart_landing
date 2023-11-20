@@ -1,0 +1,40 @@
+import React from 'react';
+import styles from './index.module.css';
+
+export default function Home() {
+
+  const openFLChartApp = () => window.open('https://app.flchart.dev', '_blank');
+  const openFLChartGithub = () => window.open('https://github.com/imaNNeo/fl_chart', '_blank');
+
+  return (
+    <div className={styles.container}>
+      <main className={styles.mainContent}>
+        <div className={styles.mainColumn}>
+          <div className={styles.flutterChartLibrary}>
+            <img src="/img/flutter.svg" alt="Flutter logo with text" className={styles.flutterLogoInText} />
+            <span className={styles.afterFlutterLogoText}>Flutter chart library</span>
+          </div>
+
+          <p className={styles.sloganNormal}>
+            Endless <span className={styles.sloganBold}>Customizability</span>
+          </p>
+          <p className={styles.sloganNormal}>
+            Forever <span className={styles.sloganBold}>Free</span>
+          </p>
+          <div className={styles.buttonsRow}>
+            <button className={styles.outlineButton} onClick={openFLChartApp}>
+              Give it a try
+              <img src="/img/play_arrow.svg" className={styles.buttonIcon} />
+            </button>
+            <button className={styles.solidButton} onClick={openFLChartGithub}>
+              <img src="/img/github.svg" className={styles.buttonIcon} />
+              Get started
+            </button>
+          </div>
+        </div>
+        <img src="/img/charts_3d_perspective.png" className={styles.chartsImage} />
+      </main>
+      <img src="/img/chart_icons.svg" className={styles.chartIcons}/>
+    </div>
+  );
+}

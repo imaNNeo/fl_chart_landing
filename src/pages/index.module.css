@@ -1,0 +1,185 @@
+.container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 124px);
+}
+
+.mainContent {
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+
+.chartsImage {
+  width: 70%;
+  margin-left: 45%;
+  z-index: -1;
+  overflow: hidden;
+  position: relative;
+}
+
+.mainColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: absolute;
+  overflow:visible;
+  left: 0%;
+  margin-left: 2rem;
+}
+
+.chartIcons {
+  width: 10vw;
+  min-width: 2vw;
+  max-width: 2vw;
+  left: 5vw;
+  bottom: -5vw;
+  position: absolute;
+  opacity: 0.3;
+}
+
+.sloganNormal {
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Inter;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 50px;
+  margin-bottom: 0px;
+  text-align: start;
+}
+@media (max-width: 768px) {
+  .sloganNormal {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sloganNormal {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.sloganBold {
+  font-weight: 700;
+}
+
+.flutterChartLibrary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.2rem;
+  margin-left: 0.3rem;
+}
+
+.flutterLogoInText {
+  width: 1rem;
+  margin-right: 0.4rem;
+}
+
+@media (max-width: 768px) {
+  .flutterLogoInText {
+    width: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .flutterLogoInText {
+    width: 0.8rem;
+  }
+}
+
+.afterFlutterLogoText {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .afterFlutterLogoText {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .afterFlutterLogoText {
+    font-size: 0.8rem;
+  }
+}
+
+.buttonsRow {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.outlineButton {
+  background-color: transparent;
+  color: #50E4FF;
+  border: 2px solid #50E4FF;
+  border-radius: 4px;
+  height: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 0.88rem;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%;
+}
+
+.outlineButton:hover {
+  background-color: #50E4FF22;
+}
+
+.outlineButton .buttonIcon {
+  margin-left: 0.2rem;
+  /* Spacing between text and icon */
+  display: inline-block;
+  /* Ensures proper alignment */
+}
+
+.solidButton {
+  background-color: #50E4FF;
+  color: black;
+  border: 2px solid #50E4FF;
+  border-radius: 4px;
+  height: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 0.88rem;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%;
+}
+
+.solidButton:hover {
+  background-color: #3db5ca;
+}
+
+.solidButton .buttonIcon {
+  height: 1rem;
+  margin-right: 0.2rem;
+  /* Spacing between text and icon */
+  display: inline-block;
+  /* Ensures proper alignment */
+}

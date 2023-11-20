@@ -15,6 +15,8 @@ const config = {
   baseUrl: '/',
   organizationName: 'imaNNeo',
   projectName: 'fl_chart',
+  deploymentBranch: 'gh-pages',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

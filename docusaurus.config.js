@@ -90,6 +90,11 @@ const config = {
           label: 'Source code',
         },
         {
+          href: '/about#speed-up-fl-chart-with-your-support',
+          label: 'Support FL Chart',
+          position: 'right',
+        },
+        {
           to: 'https://github.com/imaNNeo/fl_chart_landing', 
           label: 'Landing page source code',
         },

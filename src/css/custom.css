@@ -17,7 +17,7 @@
   --ifm-color-primary-lightest: #b4f4ff;
   --ifm-background-color: #1b2339;
   --ifm-font-color-base: #ffffff;
-  --ifm-footer-background-color: #282E45;
+  --ifm-footer-background-color: #1b2338;
   --ifm-footer-color: #FFFFFF;
   --ifm-footer-link-color: #CCCCCC;
   --ifm-font-family-base: 'Assistant', sans-serif;
@@ -33,7 +33,7 @@ html[data-theme='dark'] {
   --ifm-color-primary-lightest: #b4f4ff;
   --ifm-background-color: #1b2339;
   --ifm-font-color-base: #ffffff;
-  --ifm-footer-background-color: #282E45;
+  --ifm-footer-background-color: #1b2338;
   --ifm-footer-color: #FFFFFF;
   --ifm-footer-link-color: #CCCCCC;
   --ifm-font-family-base: 'Assistant', sans-serif;

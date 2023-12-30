@@ -29,7 +29,6 @@
   position: relative;
   width: 71vw;
   height: calc(100vh - 124px);
-  overflow: hidden;
 }
 
 .mainText {
@@ -204,7 +203,6 @@
   margin-top: 32px;
   padding: 128px 31%;
   background-color: #282e45;
-  overflow: hidden;
 }
 
 .videoIframe {

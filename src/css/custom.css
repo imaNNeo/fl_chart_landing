@@ -48,3 +48,7 @@ html[data-theme='dark'] {
   height: 80px;
   background-color: #0f0f0f;
 }
+
+body {
+  overflow-x: hidden !important;
+}

@@ -8,32 +8,67 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <main className={styles.mainContent}>
+      <div className={styles.mainContent}>
         <div className={styles.mainColumn}>
-          <div className={styles.flutterChartLibrary}>
-            <img src="/img/flutter.svg" alt="Flutter logo with text" className={styles.flutterLogoInText} />
-            <span className={styles.afterFlutterLogoText}>Flutter chart library</span>
-          </div>
+          <div className={styles.mainText}>
+            <div className={styles.flutterChartLibrary}>
+              <img
+                src="/img/flutter.svg"
+                alt="Flutter logo with text"
+                className={styles.flutterLogoInText}
+              />
+              <span className={styles.afterFlutterLogoText}>
+                Flutter chart library
+              </span>
+            </div>
 
-          <p className={styles.sloganNormal}>
-            Endless <span className={styles.sloganBold}>Customizability</span>
-          </p>
-          <p className={styles.sloganNormal}>
-            Forever <span className={styles.sloganBold}>Free</span>
-          </p>
-          <div className={styles.buttonsRow}>
-            <button className={styles.outlineButton} onClick={openFLChartApp}>
-              Give it a try
-              <img src="/img/play_arrow.svg" className={styles.buttonIcon} />
-            </button>
-            <button className={styles.solidButton} onClick={openFLChartGithub}>
-              <img src="/img/github.svg" className={styles.buttonIcon} />
-              Get started
-            </button>
+            <p className={styles.sloganNormal}>
+              Endless <span className={styles.sloganBold}>Customizability</span>
+            </p>
+            <p className={styles.sloganNormal}>
+              Forever <span className={styles.sloganBold}>Free</span>
+            </p>
+            <div className={styles.buttonsRow}>
+              <button className={styles.outlineButton} onClick={openFLChartApp}>
+                Give it a try
+                <img src="/img/play_arrow.svg" className={styles.buttonIcon} />
+              </button>
+              <button
+                className={styles.solidButton}
+                onClick={openFLChartGithub}
+              >
+                <img src="/img/github.svg" className={styles.buttonIcon} />
+                Get started
+              </button>
+            </div>
           </div>
+          <img
+            src="/img/charts_3d_perspective.png"
+            className={styles.chartsImage}
+          />
         </div>
-        <img src="/img/charts_3d_perspective.png" className={styles.chartsImage} />
-      </main>
+        <div className={styles.videoContiner}>
+          <p className={styles.videoText}>
+            <span className={styles.videoTextPink}>FL Chart</span> is a Flutter
+            data visualization library
+            <br />
+            Create customizable charts like LineChart, BarChart, PieChart, and
+            more -<br />
+            all for{" "}
+            <span className={styles.videoTextAqua}>free and open-source</span>!
+          </p>
+          <iframe
+            className={styles.videoIframe}
+            id="ytplayer"
+            type="text/html"
+            width="720"
+            height="405"
+            src="https://www.youtube.com/embed/PkPAtfNNJX8?fs=0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
       <img src="/img/chart_icons.svg" className={styles.chartIcons}/>
     </div>
   );

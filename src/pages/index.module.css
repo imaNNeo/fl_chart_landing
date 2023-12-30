@@ -4,13 +4,14 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: calc(100vh - 124px);
+  height: 100%;
 }
 
 .mainContent {
   display: flex;
   align-items: center;
-  position: absolute;
+  flex-direction: column;
+  width: 100%;
 }
 
 .chartsImage {
@@ -23,8 +24,17 @@
 
 .mainColumn {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 71vw;
+  height: calc(100vh - 124px);
+}
+
+.mainText {
+  display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   position: absolute;
   overflow:visible;
   left: 0%;
@@ -182,4 +192,54 @@
   /* Spacing between text and icon */
   display: inline-block;
   /* Ensures proper alignment */
+}
+
+.videoContiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  margin-top: 32px;
+  padding: 128px 31%;
+  background-color: #282e45;
+}
+
+.videoIframe {
+  border-radius: 16px;
+  box-shadow: 0px 4px 15px 0px rgb(0 0 0 / 50%);
+}
+
+.videoText {
+  width: 720px;
+  text-align: left;
+  font-size: larger;
+}
+
+@media (max-width: 720px) {
+  .videoContiner {
+    padding: 128px 16px;
+  }
+  .videoText {
+    width: 100%;
+  }
+  .videoIframe {
+    width: 100%;
+  }
+}
+
+.videoTextPink {
+  background: linear-gradient(
+    90deg,
+    rgba(145, 135, 242, 1) 0%,
+    rgba(205, 142, 255, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.videoTextAqua {
+  color: aqua;
+  font-weight: 800;
 }

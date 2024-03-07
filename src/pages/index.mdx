@@ -1,45 +1,74 @@
-import React from 'react';
-import styles from './index.module.css';
+import React from "react"
+import styles from "./index.module.css"
 
 export default function Home() {
-
-  const openFLChartApp = () => window.open('https://app.flchart.dev', '_blank');
-  const openFLChartGithub = () => window.open('https://github.com/imaNNeo/fl_chart', '_blank');
+  const openFLChartApp = () => window.open("https://app.flchart.dev", "_blank")
+  const openFLChartGithub = () =>
+    window.open("https://github.com/imaNNeo/fl_chart", "_blank")
+  const sponsors = [
+    { logo: "/img/sponsor_1.png", alt: "sponsor-1" },
+    { logo: "/img/sponsor_2.png", alt: "sponsor-2" },
+    { logo: "/img/sponsor_1.png", alt: "sponsor-1" },
+    { logo: "/img/sponsor_2.png", alt: "sponsor-2" },
+    { logo: "/img/sponsor_1.png", alt: "sponsor-1" },
+  ]
 
   return (
     <div className={styles.container}>
       <div className={styles.mainContent}>
         <div className={styles.mainColumn}>
-          <div className={styles.mainText}>
-            <div className={styles.flutterChartLibrary}>
-              <img
-                src="/img/flutter.svg"
-                alt="Flutter logo with text"
-                className={styles.flutterLogoInText}
-              />
-              <span className={styles.afterFlutterLogoText}>
-                Flutter chart library
-              </span>
-            </div>
+          <div className={styles.mainLeftBox}>
+            <div className={styles.mainText}>
+              <div className={styles.flutterChartLibrary}>
+                <img
+                  src="/img/flutter.svg"
+                  alt="Flutter logo with text"
+                  className={styles.flutterLogoInText}
+                />
+                <span className={styles.afterFlutterLogoText}>
+                  Flutter chart library
+                </span>
+              </div>
 
-            <p className={styles.sloganNormal}>
-              Endless <span className={styles.sloganBold}>Customizability</span>
-            </p>
-            <p className={styles.sloganNormal}>
-              Forever <span className={styles.sloganBold}>Free</span>
-            </p>
-            <div className={styles.buttonsRow}>
-              <button className={styles.outlineButton} onClick={openFLChartApp}>
-                Give it a try
-                <img src="/img/play_arrow.svg" className={styles.buttonIcon} />
-              </button>
-              <button
-                className={styles.solidButton}
-                onClick={openFLChartGithub}
-              >
-                <img src="/img/github.svg" className={styles.buttonIcon} />
-                Get started
-              </button>
+              <p className={styles.sloganNormal}>
+                Endless{" "}
+                <span className={styles.sloganBold}>Customizability</span>
+              </p>
+              <p className={styles.sloganNormal}>
+                Forever <span className={styles.sloganBold}>Free</span>
+              </p>
+              <div className={styles.buttonsRow}>
+                <button
+                  className={styles.outlineButton}
+                  onClick={openFLChartApp}
+                >
+                  Give it a try
+                  <img
+                    src="/img/play_arrow.svg"
+                    className={styles.buttonIcon}
+                  />
+                </button>
+                <button
+                  className={styles.solidButton}
+                  onClick={openFLChartGithub}
+                >
+                  <img src="/img/github.svg" className={styles.buttonIcon} />
+                  Get started
+                </button>
+              </div>
+            </div>
+            <div className={styles.sponsorsBox}>
+              <span className={styles.sponsorsText}>Our Financial Heroes:</span>
+              <div className={styles.sponsors}>
+                {sponsors.map((sponsor) => (
+                  <img src={sponsor.logo} alt={sponsor.alt} />
+                ))}
+                <a href="https://github.com/sponsors/imaNNeo" target="_blank">
+                  <div className={styles.sponsors}>
+                    <img src="/img/add_sponsor.png" alt="plus" />
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
           <img
@@ -66,11 +95,11 @@ export default function Home() {
             src="https://www.youtube.com/embed/hVRU-kpKNjQ?si=2PznxFR7xDThnULj"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-            allowfullscreen 
+            allowfullscreen
           />
         </div>
       </div>
-      <img src="/img/chart_icons.svg" className={styles.chartIcons}/>
+      <img src="/img/chart_icons.svg" className={styles.chartIcons} />
     </div>
-  );
+  )
 }

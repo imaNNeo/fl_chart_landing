@@ -38,7 +38,7 @@
   justify-content: space-between;
   height: 480px;
   position: absolute;
-  overflow:visible;
+  overflow: visible;
   left: 0%;
   margin-left: 2rem;
 }
@@ -66,29 +66,13 @@
 }
 
 .sponsors > img {
+  width: 100px;
   height: fit-content;
   padding: 4px;
 }
 
 .sponsors > a:hover {
   text-decoration: none;
-}
-
-.newSponsor {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 4px 8px;
-  border-radius: 100px;
-  border: 1px dashed #cd8ffe;
-  cursor: pointer;
-}
-
-.newSponsor > span {
-  text-decoration: none;
-  color: white;
-  margin-left: 4px;
-  font-size: small;
 }
 
 .chartIcons {
@@ -102,7 +86,7 @@
 }
 
 .sloganNormal {
-  font-feature-settings: 'clig' off, 'liga' off;
+  font-feature-settings: "clig" off, "liga" off;
   font-family: Inter;
   font-size: 3rem;
   font-style: normal;
@@ -179,8 +163,8 @@
 
 .outlineButton {
   background-color: transparent;
-  color: #50E4FF;
-  border: 2px solid #50E4FF;
+  color: #50e4ff;
+  border: 2px solid #50e4ff;
   border-radius: 4px;
   height: 3rem;
   padding-left: 2rem;
@@ -200,7 +184,7 @@
 }
 
 .outlineButton:hover {
-  background-color: #50E4FF22;
+  background-color: #50e4ff22;
 }
 
 .outlineButton .buttonIcon {
@@ -211,9 +195,9 @@
 }
 
 .solidButton {
-  background-color: #50E4FF;
+  background-color: #50e4ff;
   color: black;
-  border: 2px solid #50E4FF;
+  border: 2px solid #50e4ff;
   border-radius: 4px;
   height: 3rem;
   padding-left: 2rem;

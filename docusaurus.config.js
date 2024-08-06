@@ -69,6 +69,11 @@ const config = {
           position: 'right',
         },
         {
+          href: 'https://www.youtube.com/playlist?list=PL1-_rCwRcnbNpvodmbt43O81wMUdBv8-a',
+          label: 'Tutorials',
+          position: 'right',
+        },
+        {
           href: '/about',
           label: 'About',
           position: 'right',
@@ -86,11 +91,15 @@ const config = {
           label: 'Docs',
         },
         {
+          to: 'https://www.youtube.com/playlist?list=PL1-_rCwRcnbNpvodmbt43O81wMUdBv8-a',
+          label: 'Tutorials',
+        },
+        {
           to: 'https://github.com/imaNNeo/fl_chart', 
           label: 'Source code',
         },
         {
-          href: '/about#speed-up-fl-chart-with-your-support',
+          href: '/about#-speed-up-fl-chart-with-your-support',
           label: 'Support FL Chart',
           position: 'right',
         },

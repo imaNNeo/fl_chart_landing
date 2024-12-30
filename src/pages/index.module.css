@@ -56,7 +56,7 @@
 
 .sponsorsText {
   font-size: larger;
-  padding-left: 0.8rem;
+  padding-left: 0.2rem;
 }
 
 .sponsors {
@@ -66,10 +66,14 @@
   justify-content: flex-start;
 }
 
-.sponsors > img {
+.sponsors > a {
   width: 140px;
   height: fit-content;
   padding: 4px;
+}
+
+.sponsors > a > img {
+  border-radius: 8pt;
 }
 
 .sponsors > a:hover {

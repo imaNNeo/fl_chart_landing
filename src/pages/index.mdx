@@ -6,7 +6,11 @@ export default function Home() {
   const openFLChartGithub = () =>
     window.open("https://github.com/imaNNeo/fl_chart", "_blank")
   const sponsors = [
-    // { logo: "/img/sponsor_1.png", alt: "sponsor-1" },
+    { 
+      logo: "/img/sponsors/intero-the-sniffers.png", 
+      url: "https://www.intero-integrity.com/intero-the-sniffers", 
+      alt: "intero-the-sniffers" 
+    },
   ]
 
   return (
@@ -57,7 +61,9 @@ export default function Home() {
               <span className={styles.sponsorsText}>Our Financial Heroes:</span>
               <div className={styles.sponsors}>
                 {sponsors.map((sponsor) => (
-                  <img src={sponsor.logo} alt={sponsor.alt} />
+                  <a href={sponsor.url} target="_blank">
+                    <img src={sponsor.logo} alt={sponsor.alt} />
+                  </a>
                 ))}
                 <a href="https://github.com/sponsors/imaNNeo" target="_blank">
                   <div className={styles.sponsors}>

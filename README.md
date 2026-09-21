@@ -1,41 +1,8 @@
-# Website
+# fl_chart_landing
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+The source of flchart.dev now lives in [imaNNeo/fl_chart](https://github.com/imaNNeo/fl_chart),
+under `website/`. It is built and deployed by the `Website` workflow of that repository, on
+each release.
 
-### Installation
-
-```
-$ yarn
-```
-
-### Local Development
-
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+This repository only hosts the `gh-pages` branch that GitHub Pages serves for flchart.dev,
+so it has to stay writable — don't archive it.

@@ -1,9 +1,13 @@
 {
-  "stable": null,
+  "stable": "1.3.x",
   "versions": [
     {
       "name": "main",
       "path": "/main/"
+    },
+    {
+      "name": "1.3.x",
+      "path": "/1.3.x/"
     }
   ]
 }

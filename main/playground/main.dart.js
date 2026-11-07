@@ -47725,7 +47725,6 @@ for(p=b2.CW,o=p.f,g=0;g<r.gA(s);++g){f=r.h(s,g)
 if(!f.f)continue
 b0.aoH(b6,f,b7)
 b0.aoP(b6,f,b7)
-if(b3)b0.LK(b5,b6,b7)
 e=f.db
 d=o.$2(f,e)
 c=J.ad(d)
@@ -47736,7 +47735,8 @@ a3=b.h(e,a1)
 if(a3<0||a3>=a0.gA(a))continue
 a4=a0.h(a,a3)
 if(a2==null)continue
-h.push(new A.ov(f,a4,a3,a2))}}b0.ap5(b6,h,b7)
+h.push(new A.ov(f,a4,a3,a2))}}if(b3)b0.LK(b5,b6,b7)
+b0.ap5(b6,h,b7)
 if(q.gqf(0)||b4)b6.a.a.restore()
 for(g=0;g<r.gA(s);++g){f=r.h(s,g)
 if(!f.f)continue

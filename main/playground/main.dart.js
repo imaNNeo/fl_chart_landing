@@ -27841,16 +27841,18 @@ s=B.l.bB(b,4)
 A:{if(0===s||2===s){r=a
 break A}r=new A.y(a.b,a.a)
 break A}return r},
-d5(a,b,c,d,e){var s,r,q,p,o,n=a!=null
-if(n&&b!=null&&J.bR(a)===J.bR(b)){n=J.ad(a)
-s=n.gA(a)
-r=J.C2(s,e)
-for(q=J.ad(b),p=0;p<s;++p)r[p]=d.$3(n.h(a,p),q.h(b,p),c)
-return r}else if(n&&b!=null){n=J.ad(b)
-s=n.gA(b)
-r=J.C2(s,e)
-for(q=J.ad(a),p=0;p<s;++p){o=p>=q.gA(a)?n.h(b,p):q.h(a,p)
-r[p]=d.$3(o,n.h(b,p),c)}return r}else return b},
+d5(a,b,c,d,e){var s,r,q,p,o,n
+if(a==null?b==null:a===b)return b
+s=a!=null
+if(s&&b!=null&&J.bR(a)===J.bR(b)){s=J.ad(a)
+r=s.gA(a)
+q=J.C2(r,e)
+for(p=J.ad(b),o=0;o<r;++o)q[o]=d.$3(s.h(a,o),p.h(b,o),c)
+return q}else if(s&&b!=null){s=J.ad(b)
+r=s.gA(b)
+q=J.C2(r,e)
+for(p=J.ad(a),o=0;o<r;++o){n=o>=p.gA(a)?s.h(b,o):p.h(a,o)
+q[o]=d.$3(n,s.h(b,o),c)}return q}else return b},
 b56(a,b,c){var s
 if(a!==b)if(isNaN(a))s=isNaN(b)
 else s=!1
